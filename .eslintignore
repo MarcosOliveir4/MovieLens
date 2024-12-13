@@ -1,0 +1,6 @@
+/node_modules
+coverage
+src/types/jest-styled-components.d.ts
+!.storybook
+!.jest
+generators
