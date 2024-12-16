@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   /* config options here */
   compiler: {
     styledComponents: true
+  },
+  async redirects() {
+    return [{ source: '/', destination: '/home', permanent: true }]
   }
 }
 
