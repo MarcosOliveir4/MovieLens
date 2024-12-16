@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family:  -apple-system, Roboto, sans-serif;
+    color: ${({ theme }) => theme.colors.fontColor};
+    background-color: ${({ theme }) => theme.background};
   }
 `
 
