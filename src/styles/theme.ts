@@ -1,10 +1,12 @@
 const Theme = {
   background: '#000',
   colors: {
-    warning: '#f7d354',
-    darkWarning: '#b8930c',
+    yellow: '#f7d354',
+    darkYellow: '#b8930c',
 
-    fontColor: '#fff'
+    fontColor: '#fff',
+    softBlack: '#121212',
+    black: '#000'
   }
 }
 

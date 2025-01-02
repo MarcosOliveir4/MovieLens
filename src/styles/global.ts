@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html{
-    font-size: 62.5%; // 1rem = 10px
+    // font-size: 62.5%; // 1rem = 10px
   }
   html, body, #__next {
     height: 100vh;
