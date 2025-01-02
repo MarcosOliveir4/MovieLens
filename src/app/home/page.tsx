@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 
 import * as S from './styles'
 import { getTopRatedMovies, TopRatedMovies } from '@/services'
+import MovieCard from '@/components/MovieCard'
 
 export default function Home() {
   const [topMovies, setTopMovies] = useState<TopRatedMovies>()
@@ -12,12 +13,14 @@ export default function Home() {
     })
   }, [])
   return (
-    <S.Container className="container">
+    <S.Container>
       <S.Title>Melhores filmes:</S.Title>
-      <div className="movies-container">
+      <S.MovieContainer>
         {topMovies?.results.length &&
-          topMovies.results.map((movie) => <p key={movie.id}>{movie.title}</p>)}
-      </div>
+          topMovies.results.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+      </S.MovieContainer>
     </S.Container>
   )
 }
