@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MovieCard /> should render the component 1`] = `
+.c0 {
+  width: 340px;
+  height: 620px;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #121212;
+}
+
+.c1 {
+  position: relative;
+  height: 500px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.c2 {
+  gap: 0.5rem;
+  display: flex;
+}
+
+.c2 svg {
+  color: #f7d354;
+}
+
+.c3 {
+  background-color: #f7d354;
+  border: 2px solid #f7d354;
+  border-radius: 4px;
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.c3 a {
+  color: #000;
+  text-decoration: none;
+}
+
+<div
+  class="c0"
+  data-testid="movie-card"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="Spirited Away"
+      data-nimg="fill"
+      data-testid="movie-card-img"
+      decoding="async"
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      src="https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+      srcset="/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2F39wmItIWsg5sZMyRUHLkWBcuVCM.jpg&w=3840&q=75 3840w"
+      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+    />
+  </div>
+  <h2
+    class=""
+    data-testid="movie-card-title"
+  >
+    Spirited Away
+  </h2>
+  <p
+    class="c2"
+    data-testid="movie-card-vote-average"
+  >
+    <svg
+      data-testid="movie-card-vote-average-icon"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 576 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+      />
+    </svg>
+     
+    8.537
+  </p>
+  <button
+    class="c3"
+    data-testid="movie-card-details-button"
+  >
+    Detalhes
+  </button>
+</div>
+`;
