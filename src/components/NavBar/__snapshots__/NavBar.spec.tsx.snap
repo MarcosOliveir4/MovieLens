@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavBar /> should render the heading 1`] = `
+.c0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #121212;
+}
+
+.c1 {
+  gap: 0.5rem;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f7d354;
+  transition: color 0.5s;
+}
+
+.c1:hover {
+  color: #b8930c;
+}
+
+.c2 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.c3 {
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.c3:focus {
+  outline: 2px solid #f7d354;
+}
+
+.c4 {
+  background-color: #f7d354;
+  border: 2px solid #f7d354;
+  border-radius: 4px;
+  color: #000;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.c4:hover {
+  color: #f7d354;
+  background-color: transparent;
+}
+
+<nav
+  class="c0"
+  data-testid="navbar"
+>
+  <h2
+    class=""
+  >
+    <p
+      class="c1"
+      data-testid="navbar-link-home"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 11c0-.959-.68-1.761-1.581-1.954C16.779 8.445 17 7.75 17 7c0-2.206-1.794-4-4-4-1.517 0-2.821.857-3.5 2.104C8.821 3.857 7.517 3 6 3 3.794 3 2 4.794 2 7c0 .902.312 1.727.817 2.396A1.994 1.994 0 0 0 2 11v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-2.638l4 2v-7l-4 2V11zm-5-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zM6 5c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zM4 19v-8h12l.002 8H4z"
+        />
+      </svg>
+       
+      MovieLens
+    </p>
+  </h2>
+  <form
+    class="c2"
+    data-testid="navbar-form"
+  >
+    <input
+      class="c3"
+      data-testid="navbar-form-input"
+      placeholder="Busque um filme"
+      type="text"
+      value=""
+    />
+    <button
+      class="c4"
+      data-testid="navbar-form-button"
+      type="submit"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
+        />
+      </svg>
+    </button>
+  </form>
+</nav>
+`;
