@@ -21,7 +21,11 @@ const movieMock: Movie = {
   title: 'Spirited Away',
   video: false,
   vote_average: 8.537,
-  vote_count: 16633
+  vote_count: 16633,
+  runtime: 125,
+  budget: 15000000,
+  revenue: 274925095,
+  tagline: 'The tunnel led Chihiro to a mysterious town...'
 }
 
 const imageUrl = process.env.NEXT_PUBLIC_API_URL_IMG
@@ -41,7 +45,7 @@ describe('<MovieCard />', () => {
   beforeEach(() => {
     render(
       <ThemeProvider theme={theme}>
-        <MovieCard movie={movieMock} />
+        <MovieCard movie={movieMock} showDetails={true} />
       </ThemeProvider>
     )
   })
