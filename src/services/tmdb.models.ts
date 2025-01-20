@@ -20,4 +20,8 @@ export interface Movie {
   video: boolean
   vote_average: number
   vote_count: number
+  tagline: string
+  budget: number
+  revenue: number
+  runtime: number
 }
