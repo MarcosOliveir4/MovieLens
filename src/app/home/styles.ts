@@ -7,6 +7,10 @@ export const Title = styled.h2`
   font-size: 2.5rem;
   text-align: center;
   margin: 2rem 0 1rem;
+
+  span {
+    color: ${({ theme }) => theme.colors.yellow};
+  }
 `
 
 export const MovieContainer = styled.div`

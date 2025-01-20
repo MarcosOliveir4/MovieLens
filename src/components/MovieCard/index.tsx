@@ -7,11 +7,12 @@ import { useRouter } from 'next/navigation'
 
 interface MovieCardInterface {
   movie: Movie
+  showDetails?: boolean
 }
 
 const imageUrl = process.env.NEXT_PUBLIC_API_URL_IMG
 
-const MovieCard = ({ movie }: MovieCardInterface) => {
+const MovieCard = ({ movie, showDetails }: MovieCardInterface) => {
   const router = useRouter()
 
   return (
@@ -33,12 +34,14 @@ const MovieCard = ({ movie }: MovieCardInterface) => {
         <FaStar data-testid="movie-card-vote-average-icon" />{' '}
         {movie.vote_average}
       </S.VoteAverage>
-      <S.DetailsButton
-        data-testid="movie-card-details-button"
-        onClick={() => router.push(`/movie/${movie.id}`)}
-      >
-        Detalhes
-      </S.DetailsButton>
+      {showDetails && (
+        <S.DetailsButton
+          data-testid="movie-card-details-button"
+          onClick={() => router.push(`/movie/${movie.id}`)}
+        >
+          Detalhes
+        </S.DetailsButton>
+      )}
     </S.Wrapper>
   )
 }
